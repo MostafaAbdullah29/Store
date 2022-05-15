@@ -1,0 +1,220 @@
+<!DOCTYP html>
+<html>
+  <head>
+      <title>PicSHOT</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using online fonts from google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <!--using icons from fontawesome -->
+    <script src="https://kit.fontawesome.com/75c150d879.js" crossorigin="anonymous"></script>
+
+  </head>
+  <!-- add id selector to move/jumb back to the top of page  -->
+  <body id="Home">
+    <!--design the navigation bar from standard html list and links and give them ids selectors to move to different parts in the page   -->
+    <nav>
+      <!-- add an icon to the logo using fontawesome website -->
+      <label class="logo" >PicSHOT <i class="fa-solid fa-camera-retro"></i> </label>
+      <ul>
+        <!-- nav menu links  -->
+        <li><a class="active" href="#Home"> Home</a></li>
+        <li><a href="#About"> About</a></li>
+        <li><a href="#News"> News</a></li>
+        <li><a href="#Buy">Buy</a></li>
+        <li><a href="#Contact"> Contact</a></li>
+      </ul>
+    </nav>
+    <br><br><br><br  id="About"><br>
+    <!-- first head with class selector will use it with others elements later  -->
+     <h1 class="frist-head" >PicSHOT <i class="fa-solid fa-camera-retro"></i> </h1>
+    <p id="description" ></p>
+    <p id="description">Photos for everyone<br> With <span class="picshot">PicSHOT</span> you can Sell and buy beautiful photos taken by professionals photographers.</p>
+    <!-- design gallery slideshow inside a div as container-->
+  <div class="slideshow-container">
+   <div class="mySlides fade">
+   <div class="numbertext">1 / 3</div>
+     <!-- the three slideshow photos taken from petapixel.com -->
+   <img src="https://petapixel.com/assets/uploads/2016/02/windmills3.jpg" alt=" Picture in Netherlans" width="100%">
+     <!--the three photos have class text selector as caption with the page logo -->
+   <div class="text">PicSHOT <i class="fa-solid fa-camera-retro"></i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://petapixel.com/assets/uploads/2016/02/modern1.jpg" alt=" Picture in Netherlans" width="100%">
+  <div class="text">PicSHOT <i class="fa-solid fa-camera-retro"></i></div>
+</div>
+     
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://petapixel.com/assets/uploads/2016/02/modern2.jpg" alt=" Picture in Netherlans" width="100%">
+  <div class="text">PicSHOT <i class="fa-solid fa-camera-retro"></i></div>
+</div>
+<!-- make symbols to click and move to next/-previous photo -->
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+<!-- make dots symbols to click and move to the photo that pressed-->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span id="Buy" class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+ 
+<h2 class="gallery">Gallery</h2>
+<br>
+    <!-- design cards including photos icons and details, each div will be separate and take different selector and design, all photos and details taken from unsplash.com except the prices-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603917817377-ee53733f5be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="house,water canals, nature" height="400px" width="100%">
+      <div class="container">
+        <h2 class="title">Tamar Gogua</h2>
+        <p> <i class="fa-solid fa-image"></i> House,Water Canals, Nature </p>
+        <p> <i class="fa-solid fa-location-dot"></i> Giethoorn, Netherlands</p>
+        <p><i class="fa-solid fa-hand-holding-dollar"></i> <span class="price">  € 17.95 </span></p>
+       <p><a class="G-icon" href="https://unsplash.com/@tamara_tmr" target="_blank"><i class="fa-solid fa-globe"></i></a> See More Pictures</p>
+        <p><button class="button"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576755744496-da64af8fff34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Bikes,Rain" height="400px" width="100%">
+      <div class="container">
+        <h2 class="title">kayla</h2>
+        <p> <i class="fa-solid fa-image"></i> Bikes, Rain</p>
+        <p><i class="fa-solid fa-location-dot"></i> Groningen, Netherlands</p>
+        <p><i class="fa-solid fa-hand-holding-dollar"></i> <span class="price">  € 16.00 </span></p> 
+        <p><a class="G-icon" href="https://unsplash.com/@kayla_ih" target="_blank"><i class="fa-solid fa-globe"></i></a> See More Pictures</p>
+        <p><button class="button"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1564152387566-2cb370cb2ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1164&q=80" alt="Windmills, Water" height="400" width="100%">
+      <div class="container">
+        <h2 class="title">Moritz Kindler</h2>
+         <p> <i class="fa-solid fa-image"></i> Windmills</p>
+        <p><i class="fa-solid fa-location-dot"></i> Zaanse Schans, Amsterdam, Netherlands </p>
+        <p><i class="fa-solid fa-hand-holding-dollar"></i> <span class="price">  € 19.80 </span></p> 
+        <p><a class="G-icon" href="https://unsplash.com/@moritz_photography" target="_blank"><i class="fa-solid fa-globe"></i></a> See More Pictures</p>
+        <p  id="News"><button class="button"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <br><br><br><br>
+    
+   <h2 class="list-head">All You Need</h2>
+    <div>
+<!-- table with details bacckground color  -->
+      <table >
+        <thead>
+          <tr>
+             <th>PicSHOT Post</th>
+             <th>ASPECT RATIO</th>
+             <th>RESOLUTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>Square photo</td>
+          <td>1:1</td>
+          <td>1080 x 1080 px</td>
+          </tr>
+       <tr>
+          <td>Landscape photo</td>
+          <td>1.91:1</td>
+          <td>1080 x 566 px</td>
+          </tr>
+           <tr>
+          <td>Portrait photo</td>
+          <td>4:5</td>
+          <td>1080 x 1350 px</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- id selector just to use it only noce for this div -->
+     <div id="d-list">
+      
+      <h3 class="list-title">What’s the best PicSHOT image size?</h3>
+
+      <h4 class="list-title2">Here, you’ll find all the  PicSHOT dimensions for 2022</h4>
+       <!-- will use unordered list "ul" will be marked with bullets -->
+<ul id="list-inf">
+  <li>Photo, graphic, and video PicSHOT post size, aspect ratio, and infographic.</li>
+  <li>PicSHOT Reels size, thumbnail sizes, aspect ratio, and specs.</li>
+  <li>PicSHOT Stories size and aspect ratio for image and video.</li>
+  <li>PicSHOT Story highlights cover size.</li>
+  <li>PicSHOT ad sizes, aspect ratios, and infographic.</li>
+  <li>PicSHOT TV video and cover image specs and sizes, plus infographic.</li>
+      </ul>
+    </div>
+    <!-- will design the footer it is the last part of the pageو it Contains the copyright, social media icons and contacts. will divide them to three parts left center right-->
+    <div>
+    <footer id="Contact">
+      <div class="main-box">
+        <div class="left side">
+          <div class="contact-inf">
+            <label class="logo" >PicSHOT <i class="fa-solid fa-camera-retro"></i> </label>
+            <p class="copyright"><i class="fa-solid fa-copyright"></i> May 2022 PicSHOT</p>
+            <div class="social-icons">
+              <a class="copyright" href=""> <i class="fa-brands fa-facebook"></i></a>
+              <a class="copyright" href=""><i class="fa-brands fa-github"></i></a>
+              <a class="copyright" href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a class="copyright" href="">  <i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+        </div>
+      </div>
+        <div class="center side">
+          <h2> address</h2>
+          <div class="contact-inf">
+            <div class="location"></div>
+            <a class="copyright" href=""> <i class="fa-solid fa-location-dot"></i></a>
+            <span class="copyright">  0 Street, 1299, Lalacity </span>
+          </div>
+          <div class="phone">
+            <a class="copyright" href=""> <i class="fa-solid fa-phone"></i></a>
+            <span class="copyright"> +0909090909</span>
+          </div>
+          <div class="email">
+            <a class="copyright" href=""> <i class="fa-solid fa-envelope"></i></a>
+            <span class="copyright"> picshot@picshot.com</span>
+          </div></div>
+          <div class="right side">
+            <h2>Contact Us</h2>
+            <div class="contact-inf">
+              <form action="">
+                <div class="email">
+                  <div class="text2"><span class="copyright">Email *</span>
+                  </div>
+                  <input type="email" required>
+                    <div class="msg"><br>
+                      <div class="text2"><span class="copyright">Message *<span><br>
+                        
+                      </div>
+                      <textarea  rows="2" cols="25" required></textarea>
+                </div>
+                  <div class="btn">
+                   <input class="button-send" type="button" value="Send">
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </footer>
+        </div>
+  </body>
+  
+</html>
