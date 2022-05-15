@@ -1,5 +1,5 @@
 // make javascript rules to design the slidephotos and make them move smoothly
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
