@@ -1,5 +1,5 @@
 // make javascript rules to design the slidephotos and make them move smoothly
-let slideIndex = 0;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -16,7 +16,7 @@ function showSlides(n) {
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  for (i = 1; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
